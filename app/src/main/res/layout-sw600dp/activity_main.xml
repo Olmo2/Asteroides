@@ -14,7 +14,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvAsteroides 4"
+        android:id="@+id/tvAsteroides"
         android:layout_width="858dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"

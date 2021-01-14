@@ -7,4 +7,6 @@
     <string name="Puntuaciones">Puntuaciones</string>
     <string name="Acercade">Acerca De</string>
     <string name="Salir">Salir</string>
+    <string name="TextoAcercaDe">"Asteroids es un popular videojuego de arcade basado en vectores lanzado en 1979 por Atari. El objetivo del juego es disparar y destruir asteroides evitando chocar contra los fragmentos de estos. Fue uno de los juegos más populares de la Época Dorada de los videojuegos arcade."</string>
+
 </resources>
