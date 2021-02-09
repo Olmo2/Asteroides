@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="preferencias_principal">
     <CheckBoxPreference
         android:key="musica"
-        android:title="Reproducir música"
-        android:summary="Se reproduce música de fondo"/>
+        android:summary="Se reproduce música de fondo"
+        android:title="Reproducir música" />
     <ListPreference
-        android:key="graficos"
-        android:title="Tipo de gráficos"
-        android:summary="Se escoge la representación de gráficos"
+        android:defaultValue="1"
         android:entries="@array/tiposGraficos"
         android:entryValues="@array/tiposGraficosValores"
-        android:defaultValue="1"/>
+        android:key="graficos"
+        android:summary="Se escoge la representación de gráficos"
+        android:title="Tipo de gráficos" />
     <EditTextPreference
-        android:key="fragmentos"
-        android:title="Número de Fragmentos"
-        android:summary="En cuantos trozos se divide un asteroide"
+        android:defaultValue="3"
         android:inputType="number"
-        android:defaultValue="3"/>
+        android:key="fragmentos"
+        android:summary="En cuantos trozos se divide un asteroide"
+        android:title="Número de Fragmentos" />
+
+
+    <PreferenceCategory android:title="Modo multijuagador">
+        <CheckBoxPreference
+            android:key="modo"
+            android:summary="Permite múltiples jugadores"
+            android:title="Activar multijugador" />
+        <EditTextPreference
+            android:defaultValue="5"
+            android:inputType="number"
+            android:key="jugadores"
+            android:summary="Cuál es el número máximo de juagadores"
+            android:title="Máximo de jugadores" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/tiposConexion"
+            android:entryValues="@array/tiposConexionValores"
+            android:key="conexion"
+            android:summary="Se escoge el tipo de conexión"
+            android:title="Modo de conexión" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
